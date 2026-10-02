@@ -1,0 +1,39 @@
+ .trendsPanel {
+  background: #16181c;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  margin: 2rem 0 0 0;
+  min-width: 320px;
+  max-width: 380px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  border: 1px solid #222;
+}
+ .heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+ .trendsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ .trend {
+  margin-bottom: 1.2rem;
+}
+ .trendTitle {
+  font-weight: bold;
+  display: block;
+  color: #fff;
+}
+ .trendDesc {
+  color: #8899a6;
+  font-size: 0.95rem;
+}
+ .promoted {
+  color: #1da1f2;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}

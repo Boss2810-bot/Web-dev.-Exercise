@@ -1,0 +1,43 @@
+.container {
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    background-color: blue;
+   
+}
+
+.class {
+    height: 112px;
+    width: 112px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 70px;
+    /* transform: translateX(-50px) */
+    animation: dhruv1 3s ease-in-out 1s 1 alternate forwards , moveX 6s linear 1;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes dhruv1 {
+    0% , 100%{
+        transform:  translateY(0);
+    }
+    25%{
+        transform: translateY(-300px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-200px);
+    }
+}
+@keyframes moveX {
+    0% {
+        left: 20%;
+    }
+    100% {
+        left: 80%;
+    }
+}

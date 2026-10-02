@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14</title>
+    <style>
+        body {
+            background-color: rgb(10, 78, 10);
+            font-family: monospace;
+            padding: 15px;
+            font-size: 23px;
+            color: aliceblue;
+        }
+
+        .terminal {
+            white-space: pre;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="terminal" id="terminal"></div>
+    <script>
+        const messages = [
+            "Initializing Hacking",
+            "Reading your Files",
+            "Password files Detected",
+            "Sending all passwords and personal files to server",
+            "Cleaning up"
+        ]
+
+        const terminal = document.getElementById("terminal")
+
+        async function displayMessages() {
+            for (let message of messages) {
+                for (let i = 0; i < 4; i++) {
+                    terminal.innerHTML = message + ".".repeat(i) + "nbsp;".repeat(3 - i);
+                    await new Promise(r => setTimeout(r, 300));
+                }
+                terminal.innerHTML += "\n";
+                await new Promise(r => setTimeout(r, Math.random() * 6000 + 1000));
+            }
+            terminal.innerHTML += "Hacking Complete!";
+        }
+        displayMessages()
+    </script>
+</body>
+
+</html>
